@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
-import Link from "next/link";
 import Head from "next/head";
+
+import { Link } from "../routes";
 
 import withAnalytics from "../src/components/withAnalytics";
 
@@ -12,7 +13,11 @@ const Users = ({ users }) => (
     </Head>
     <ul>
       {users.map(user => (
-        <li key={user.id}>{user.login}</li>
+        <li key={user.id}>
+          <Link route={`users/${user.login}`}>
+            <a>{user.login}</a>
+          </Link>
+        </li>
       ))}
     </ul>
     <Link href="/">
