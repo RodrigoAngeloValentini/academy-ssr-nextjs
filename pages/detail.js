@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-import withAnalytics from "../src/components/withAnalytics";
+import withAnalytics from "~/components/withAnalytics";
 
 const User = ({ user }) => (
   <div>
