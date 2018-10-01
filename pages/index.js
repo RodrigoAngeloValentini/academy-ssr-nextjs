@@ -7,7 +7,7 @@ const Home = () => (
     <Head>
       <title>Meu App NextJS</title>
     </Head>
-    <h1>Hello World</h1>
+    <img width="200" src="/static/panda.jpg" />
     <Link prefetch href="/users">
       <a>Usuários</a>
     </Link>
