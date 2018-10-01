@@ -1,8 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 const Home = () => (
   <div>
+    <Head>
+      <title>Meu App NextJS</title>
+    </Head>
     <h1>Hello World</h1>
     <Link prefetch href="/users">
       <a>Usuários</a>
